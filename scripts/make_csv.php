@@ -31,7 +31,7 @@ $cities = [
 ];
 
 try {
-	$directory = 'files';
+	$directory = '../files';
 
 	if (!is_dir($directory)) {
 		if (!mkdir($directory, 0777, true)) {
@@ -60,7 +60,7 @@ try {
 
 	fclose($csv_file);
 
-	echo 'ok';
+	echo 'Csv file created successfully';
 } catch (Exception $exception) {
 	echo $exception->getMessage();
 }

@@ -1,5 +1,15 @@
-<?php
-include 'scripts/index.php';
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-?>
-<h1>Hello</h1>
+    button {
+        width: 200px;
+        height: 60px;
+    }
+</style>
+<form action="scripts/make_csv.php" method="POST">
+    <button>Save csv file</button>
+</form>
